@@ -1,0 +1,11 @@
+<Project ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MetaBuildBinDir)\MetaBuild.Module.targets" />
+
+  <Target Name="BeforeImage">
+    <ItemGroup>
+      <File Include="Microsoft.ServiceModel.Web\bin\Microsoft.ServiceModel.Web.dll;">
+        <ImagePath>Assemblies</ImagePath>
+      </File>
+    </ItemGroup>
+  </Target>
+</Project>

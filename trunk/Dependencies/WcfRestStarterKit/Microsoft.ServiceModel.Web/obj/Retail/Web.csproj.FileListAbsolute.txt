@@ -1,0 +1,5 @@
+C:\KeenDev\SRC\Dependencies\WCF REST Starter Kit\Microsoft.ServiceModel.Web\bin\Microsoft.ServiceModel.Web.dll
+C:\KeenDev\SRC\Dependencies\WCF REST Starter Kit\Microsoft.ServiceModel.Web\bin\Microsoft.ServiceModel.Web.pdb
+C:\KeenDev\SRC\Dependencies\WCF REST Starter Kit\Microsoft.ServiceModel.Web\obj\Retail\ResolveAssemblyReference.cache
+C:\KeenDev\SRC\Dependencies\WCF REST Starter Kit\Microsoft.ServiceModel.Web\obj\Retail\Microsoft.ServiceModel.Web.dll
+C:\KeenDev\SRC\Dependencies\WCF REST Starter Kit\Microsoft.ServiceModel.Web\obj\Retail\Microsoft.ServiceModel.Web.pdb

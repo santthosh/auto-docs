@@ -1,0 +1,133 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <SchemaVersion>2.0</SchemaVersion>
+    <NoStandardLibraries>true</NoStandardLibraries>
+    <AssemblyName>Microsoft.ServiceModel.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ProjectGuid>{CBC8A641-D6B5-4E9F-96B4-3AF72E8ACFB3}</ProjectGuid>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\Key\Key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <IncrementalBuild>false</IncrementalBuild>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>cd ..\.. &amp; c:\dd\CDFRestwork\tools\razzle.cmd no_sdrefresh exec nmake objc\i386\AssemblyAttributes.cs</PreBuildEvent>
+    <PostBuildEvent />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Retail' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <HintPath>c:\dd\CDFRestwork\public\sdk\ref\v2.0\..\..\..\internal\sdk\ref\WinFX\v3.5\System.Core.dll</HintPath>
+      <Name>System.Core</Name>
+      <SpecificVersion>False</SpecificVersion>
+      <Aliases>global</Aliases>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>c:\dd\CDFRestwork\public\sdk\ref\v2.0\System.Configuration.dll</HintPath>
+      <Name>System.Configuration</Name>
+      <SpecificVersion>False</SpecificVersion>
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <HintPath>c:\dd\CDFRestwork\public\sdk\ref\v2.0\System.dll</HintPath>
+      <Name>System</Name>
+      <SpecificVersion>False</SpecificVersion>
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="System.IdentityModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <HintPath>c:\dd\CDFRestwork\public\sdk\ref\v2.0\System.IdentityModel.dll</HintPath>
+      <Name>System.IdentityModel</Name>
+      <SpecificVersion>False</SpecificVersion>
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>c:\dd\CDFRestwork\public\sdk\ref\v2.0\System.Web.dll</HintPath>
+      <Name>System.Web</Name>
+      <SpecificVersion>False</SpecificVersion>
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>c:\dd\CDFRestwork\public\sdk\ref\v2.0\System.Web.Extensions.dll</HintPath>
+      <Name>System.Web.Extensions</Name>
+      <SpecificVersion>False</SpecificVersion>
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <HintPath>c:\dd\CDFRestwork\public\sdk\ref\v2.0\System.Xml.dll</HintPath>
+      <Name>System.Xml</Name>
+      <SpecificVersion>False</SpecificVersion>
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdapterStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyAttributes.cs" />
+    <Compile Include="AsyncResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CachingParameterInspector.cs" />
+    <Compile Include="WebCacheAttribute.cs" />
+    <Compile Include="CurrentPrincipalRequestInterceptor.cs" />
+    <Compile Include="ExtensionHelpers.cs" />
+    <Compile Include="WebHelpAttribute.cs" />
+    <Compile Include="UnhandledOperationInvoker.cs" />
+    <Compile Include="WrappedOperationSelector.cs" />
+    <Compile Include="HelpPageInvoker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResponseWebFormatPropertyAttacher.cs" />
+    <Compile Include="WebProtocolException.cs" />
+    <Compile Include="FormsPostDispatchMessageFormatter.cs" />
+    <Compile Include="WebErrorHandler.cs" />
+    <Compile Include="RequestInterceptor.cs" />
+    <Compile Include="RequestInterceptorBindingElement.cs" />
+    <Compile Include="WebHttpBehavior2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebServiceHost2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebServiceHost2Factory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

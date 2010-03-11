@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autodocs.ServiceModel.Web", "Autodocs.ServiceModel.Web\Autodocs.ServiceModel.Web.csproj", "{93B6BDC6-7796-45C0-A982-526A59DDF37B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autodocs.ServiceModel.Tests", "Autodocs.ServiceModel.Tests\Autodocs.ServiceModel.Tests.csproj", "{31787877-8F83-4639-872B-732F79FFFDBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autodocs.WebServices", "Autodocs.WebServices\Autodocs.WebServices.csproj", "{97988FF9-5053-4F95-B2AA-47BF35405254}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93B6BDC6-7796-45C0-A982-526A59DDF37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B6BDC6-7796-45C0-A982-526A59DDF37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B6BDC6-7796-45C0-A982-526A59DDF37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B6BDC6-7796-45C0-A982-526A59DDF37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31787877-8F83-4639-872B-732F79FFFDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31787877-8F83-4639-872B-732F79FFFDBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31787877-8F83-4639-872B-732F79FFFDBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31787877-8F83-4639-872B-732F79FFFDBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97988FF9-5053-4F95-B2AA-47BF35405254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97988FF9-5053-4F95-B2AA-47BF35405254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97988FF9-5053-4F95-B2AA-47BF35405254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97988FF9-5053-4F95-B2AA-47BF35405254}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
